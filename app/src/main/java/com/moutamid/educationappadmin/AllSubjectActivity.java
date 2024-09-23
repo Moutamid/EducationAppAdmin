@@ -59,6 +59,9 @@ public class AllSubjectActivity extends AppCompatActivity {
                         }
                     }
                     getCount();
+                } else {
+                    progressDialog.dismiss();
+                    Toast.makeText(AllSubjectActivity.this, "Nothing Found", Toast.LENGTH_SHORT).show();
                 }
             }
 
